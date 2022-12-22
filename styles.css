@@ -1,0 +1,186 @@
+*, *::before, *::after {
+    box-sizing: border-box;  
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    margin: 0;
+    color: #131313;
+}
+
+/* Typography */
+
+h1 {
+    margin: 0;
+    color: #fff;
+    font-weight: 900;
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.25rem;
+    margin: 1em 0.25em 0.175em 0.25em;
+}
+
+h2,
+.advertisement-bottom,
+.advertisement-top,
+.subheading {
+    font-weight: 700;
+}
+
+.bold {
+    color: #131313;
+    font-weight: 900;
+}
+
+.paragraph {
+    font-size: 0.75rem;
+    line-height: 1.25;
+}
+
+.advertisement span {
+    text-shadow: 0 0 5px #252525;
+    text-transform: uppercase;
+}
+
+span,
+.advertisement-top {
+    color: #99D930;
+}
+
+.footer {
+    font-size: 0.50rem;
+    color: #c4c4c4;
+    margin: 1em 0.25em;
+}
+
+/* Left design */
+
+.main-content,
+.advertisement {
+    display: flex;
+    flex-direction: column;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+.main-content {
+    margin: 0 1.5em;
+}
+
+.advertisement {
+    justify-content: space-between;
+    min-height: 350px;
+    background-image: url('images/background.png');
+    background-size: cover;
+}
+
+.advertisement-top {
+    order: -1;
+    border-top: 5px solid #99D930;
+    max-width: 186px;
+    display: block;
+    margin: 0 auto;
+}
+
+.advertisement-bottom {
+    margin-bottom: 1.75em;
+}
+
+form {
+    max-width: 450px;
+    margin: 0 auto;
+}
+
+input,
+button {
+    font-family: 'Montserrat', sans-serif;
+    width: 75%;
+    border-radius: 2px;
+}
+
+input,
+button {
+    cursor: pointer;
+}
+
+input:focus {
+    cursor: text;
+}
+
+input {
+    margin-bottom: 0.75em;
+    border: 2px double #c4c4c4;
+    text-align: center;
+    padding: 5px;
+}
+
+input:active,
+input:focus {
+    outline: none;
+    border: 2px double #FF30EE;
+    background: #F5F5F5;
+}
+
+button {
+    border: none;
+    color: #fff;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    background-image: linear-gradient(to right, #99D930, #6CA50E);
+    padding: 7px;
+}
+
+button:focus,
+button:hover {
+    outline: none;
+    background-image: linear-gradient(to right, #FF30EE, #9B008E);
+}
+
+button:active {
+    background: #131313;
+    color: #fff;
+}
+
+@media (min-width: 576px) {
+    body {
+        display: flex;
+    }
+    
+    .advertisement,
+    .main-content {
+        width: 50%;
+    }
+    
+    .advertisement {
+        min-height: 100vh;
+    }
+    
+    .main-content {
+        justify-content: center;
+    }
+    
+    h1 {
+        font-size: 5vw;
+    }
+    
+    h2 {
+        font-size: 4vw;
+    }
+    
+    .advertisement-bottom,
+    .subheading {
+        font-size: 1.50rem;
+    }
+    
+    .footer {
+        font-size: 1rem;
+    }
+    
+    .paragraph {
+        font-size: 1.25rem;
+    }
+}
